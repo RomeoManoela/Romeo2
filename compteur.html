@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compteur</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<center>
+        <p id="par">0</p>
+        <button id="btn1">INCREMENTER</button>
+        <button id="reset">REINITIALISER</button>
+        <button id="btn2">DECREMENTER</button>
+        
+<center>
+    <script>
+        var paragr=document.getElementById('par');
+        var bt1=document.getElementById('btn1');
+        var bt2=document.getElementById('btn2');
+        var rese=document.getElementById('reset');
+        var numero=0;
+        //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+        
+        function plus(){
+           numero++;
+            if(numero<0){
+            paragr.style.color='red';
+            }
+            else if(numero>0){
+                paragr.style.color='green';
+            }
+            else{
+                paragr.style.color='black';
+            }
+            paragr.innerText=numero;
+
+
+            
+        }
+        function moins(){
+            numero--;
+            paragr.innerText=numero;
+           if(numero<0){
+            paragr.style.color='red';
+            }
+            else if(numero>0){
+                paragr.style.color='green';
+            }
+            else{
+                paragr.style.color='black';
+            }
+            
+
+        }
+        
+         
+        
+        bt1.addEventListener('click',plus);
+        bt2.addEventListener('click',moins);
+        rese.onclick=function(){
+            numero=0;
+            paragr.innerText=numero;
+            paragr.style.color='black';
+        }
+        //***************manino zany raha io tsy mety laha atao boutton?****
+    </script>
+</form>
+
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+body{
+    background: blue;
+    font-size: 50px;
+}
+p{
+    text-align: center;
+    border: 2px solid floralwhite;
+    margin: 5% 20%;
+    border-radius: 8px;
+}
+#btn1{
+    background-image: linear-gradient(to right,white,green,white);
+    height: 50px;
+    border-radius: 15px;
+}
+
+
+#btn2{
+    background-image: linear-gradient(to right,white,red,white);
+    height: 50px;
+    border-radius: 15px;
+}
+#reset{
+    background-color: antiquewhite;
+    height: 50px;
+    border-radius: 15px;
+}
+#par{
+    background-color: burlywood;
+    width: 60px;
+}
+@media screen and (max-width:900px) {
+    #btn1,#btn2,#reset{
+        font-size: 40px;
+        width: 100%;
+        margin: 20PX 0;
+    }
+    
+}
+
+/*@font-face{
+    font-family: "e";
+    src: url("/IndieFlower-Regular.ttf");
+}*/
